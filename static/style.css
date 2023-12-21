@@ -8,6 +8,7 @@ nav {
     background-color: #415a77;
     overflow: hidden;
     text-align: center;
+    padding: 5px;
 }
 
 nav a {
@@ -29,7 +30,8 @@ nav a:hover {
 }
 
 .menu {
-    float: left;
+    display: inline-block;
+    margin-left: 100px;
 }
 
 .menu a {
@@ -83,6 +85,9 @@ section {
 }
 
 section img {
+    width: 380px;
+    height: 200px;
+    object-fit: cover;
     border-radius: 5px;
 }
 
@@ -123,19 +128,47 @@ section h1 {
     display: inline-block;
     margin: 10px 25px;
     text-align: center;
+    position: relative;
+    overflow: hidden;
 }
 
 .game-type img {
-    width: 250px; /* Tentukan lebar gambar */
-    height: 250px; /* Tentukan tinggi gambar */
-    object-fit: cover; /* Memastikan gambar tetap dalam kotak tanpa mengubah aspek rasio */
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
     border-radius: 8px;
+    transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+.image-card:hover img {
+    transform: scale(1.1);
+    opacity: 0.7;
+}
+
+.game-type:hover img {
+    opacity: 0.4;
 }
 
 .game-type p {
     margin: 10px 0;
     font-weight: bold;
     color: #0d1b2a;
+}
+
+/* Efek Hover untuk teks di atas gambar games */
+.game-type .teks-hover {
+    margin: 10px 0;
+    font-weight: bold;
+    position: absolute;
+    top: 40%; /* Posisi teks di tengah vertikal */
+    left: 50%; /* Posisi teks di tengah horizontal */
+    transform: translate(-50%, -50%); /* Membuat teks di tengah gambar */
+    opacity: 0; /* Awalnya diatur ke 0 untuk efek hover */
+    transition: opacity 0.5s ease; /* Transisi untuk efek hover */
+}
+
+.game-type:hover .teks-hover {
+    opacity: 1; /* Munculkan teks saat hover */
 }
 
 /* KAKI */
