@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="shortcut icon" href="{{ url_for('static', filename='favico.ico') }}" type="image/x-icon" />
+    <meta property="og:title" content="Sweeter - the sweetest site" />
+    <meta property="og:description" content="Are you looking for me?" />
+    <meta property="og:image" content="{{ url_for('static', filename='ogimage.jpg') }}" />
+
+    <title>TOURNEY MODE</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+
+    <!-- Bulma CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css"
+    />
+    <!-- Font Awesome CSS -->
+    <link
+      href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.js"></script>
+
+    <link href="{{ url_for('static', filename='style.css') }}" rel="stylesheet" />
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+    <script>
+      $(document).ready(function() {
+        get_posts();
+      })
+      // {% if msg %}
+      //     alert("{{ msg }}")
+      // {% endif %}
+      // function sign_in() {
+      //   $.ajax({
+      //     type: "POST",
+      //     url: "/sign_in",
+      //     data: {
+      //       username_give: "",
+      //       password_give: "",
+      //     },
+      //     success: function (response) {
+      //       if (response["result"] == "success") {
+      //         $.cookie("mytoken", response["token"], { path: "/" });
+
+      //         alert("Login complete!");
+      //         window.location.href = "/";
+      //       } else {
+      //         // If something goes wrong in the login
+      //         // process, alert the user of the error
+      //         alert(response["msg"]);
+      //       }
+      //     },
+      //   });
+      // }
+
+      // function sign_up() {
+      //   let username = "";
+      //   let password = "";
+      //   let password2 = "";
+
+      //   $.ajax({
+      //     type: "POST",
+      //     url: "/sign_up/save",
+      //     data: {
+      //       username_give: username,
+      //       password_give: password,
+      //     },
+      //     success: function (response) {
+      //       alert("You are registered! Nice!");
+      //       window.location.replace("/login");
+      //     },
+      //   });
+      // }
+    </script>
+  </head>
+  <body>
+    <nav>
+        <div class="logo">
+            <img src="your-logo-url.png" alt="Logo" width="50" height="50">
+        </div>
+
+        <div class="menu">
+            <a href="#home">Home</a>
+            <a href="#games">Games</a>
+        </div>
+
+        <div class="user-section">
+            <a href="#login">Login</a>
+            <a href="#profile">Profile</a>
+        </div>
+    </nav>
+
+    <header>
+        <h1>Tournament Information</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis ratione, magni ut vero expedita alias unde. Voluptatibus fugit necessitatibus omnis assumenda, ad iste sed eveniet voluptatem commodi ut, aut architecto!</p>
+    </header>
+    <section>
+        <h1>
+            Top Tournaments!
+        </h1>
+        <div class="info-card">
+            <img src="https://images.contentstack.io/v3/assets/bltb6530b271fddd0b1/blt4444ec49c9a9e717/653c18621680320407c39d31/Copy_of_Ep7a3_ISO_Content_Stack_Thumbnail_1200x625_.png" alt="">
+            <h2>CSS ILKOM TOURNAMENT!</h2>
+            <hr style="margin: 5px 0;">
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo velit magnam laudantium incidunt odit beatae placeat et id repudiandae aut necessitatibus, cum quas rerum, aspernatur dolores molestias similique iure non.   </p>
+            <a href="tournament/game1">View Tournaments</a>
+        </div>
+        <div class="info-card">
+            <img src="https://images.contentstack.io/v3/assets/bltb6530b271fddd0b1/blt4444ec49c9a9e717/653c18621680320407c39d31/Copy_of_Ep7a3_ISO_Content_Stack_Thumbnail_1200x625_.png" alt="">
+            <h2>CSS ILKOM TOURNAMENT!</h2>
+            <hr style="margin: 5px 0;">
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo velit magnam laudantium incidunt odit beatae placeat et id repudiandae aut necessitatibus, cum quas rerum, aspernatur dolores molestias similique iure non.   </p>
+            <a href="tournament/game1">View Tournaments</a>
+        </div>
+        <div class="info-card">
+            <img src="https://images.contentstack.io/v3/assets/bltb6530b271fddd0b1/blt4444ec49c9a9e717/653c18621680320407c39d31/Copy_of_Ep7a3_ISO_Content_Stack_Thumbnail_1200x625_.png" alt="">
+            <h2>CSS ILKOM TOURNAMENT!</h2>
+            <hr style="margin: 5px 0;">
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo velit magnam laudantium incidunt odit beatae placeat et id repudiandae aut necessitatibus, cum quas rerum, aspernatur dolores molestias similique iure non.   </p>
+            <a href="tournament/game1">View Tournaments</a>
+        </div>
+    </section>
+    <section class="game-types">
+        <h1>
+            Games
+        </h1>
+        <div class="game-type">
+            <img src="/static/images/dota2.jpg" alt="Game 1">
+            <p>DOTA 2</p>
+        </div>
+        <div class="game-type">
+            <img src="/static/images/valorant.png" alt="Game 1">
+            <p>VALORANT</p>
+        </div>
+        <div class="game-type">
+            <img src="/static/images/cs2.png" alt="Game 1">
+            <p>CSGO 2</p>
+        </div>
+
+    </section>
+  </body>
+</html>
