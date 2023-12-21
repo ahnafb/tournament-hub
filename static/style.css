@@ -121,7 +121,7 @@ section h1 {
 
 .game-type {
     display: inline-block;
-    margin: 10px;
+    margin: 10px 25px;
     text-align: center;
 }
 
@@ -136,4 +136,12 @@ section h1 {
     margin: 10px 0;
     font-weight: bold;
     color: #0d1b2a;
+}
+
+/* KAKI */
+footer {
+    background-color: #1b263b;
+    color: #fff;
+    text-align: center;
+    padding: 30px;
 }
