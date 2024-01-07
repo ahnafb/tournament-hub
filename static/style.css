@@ -160,15 +160,74 @@ section h1 {
     margin: 10px 0;
     font-weight: bold;
     position: absolute;
-    top: 40%; /* Posisi teks di tengah vertikal */
-    left: 50%; /* Posisi teks di tengah horizontal */
-    transform: translate(-50%, -50%); /* Membuat teks di tengah gambar */
-    opacity: 0; /* Awalnya diatur ke 0 untuk efek hover */
-    transition: opacity 0.5s ease; /* Transisi untuk efek hover */
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity 0.5s ease;
 }
 
 .game-type:hover .teks-hover {
-    opacity: 1; /* Munculkan teks saat hover */
+    opacity: 1;
+}
+
+/* Login Styles */
+#login-body {
+    background-color: #f4f4f4;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.login-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.login-container h1 {
+    font-size: xx-large;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.login-form {
+    padding-inline: 35px;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    font-weight: bold;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 12px;
+    border: 1px  #ccc;
+    /* border-radius: 4px; */
+    margin-top: 8px;
+    margin-bottom: 5px;
+}
+
+.form-group button {
+    width: 100%;
+    font-weight: bold;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    padding: 12px;
+    background-color: #778da9;
+    color: #0d1b2a;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
 }
 
 /* KAKI */
